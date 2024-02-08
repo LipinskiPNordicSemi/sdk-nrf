@@ -39,6 +39,8 @@ manifest:
       url-base: https://github.com/BabbleSim
     - name: bosch
       url-base: https://github.com/boschsensortec
+    - name: chip_test
+      url-base: https://github.com/LipinskiPNordicSemi
 
   # If not otherwise specified, the projects below should be obtained
   # from the ncs remote.
@@ -153,8 +155,9 @@ manifest:
       revision: 0a980137820ab08d267cce1daa93f003c0437854
     - name: matter
       repo-path: sdk-connectedhomeip
+      remote: chip_test
       path: modules/lib/matter
-      revision: 4936f9fa2be9e6cd16b02e4fcb9a7aff611f4981
+      revision: heap_resize
       submodules:
         - name: nlio
           path: third_party/nlio/repo
